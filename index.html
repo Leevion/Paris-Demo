@@ -1,0 +1,1669 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Paris Team Hibiscus | Cleaning, Decorating & In-Home Meal Prep</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap" rel="stylesheet">
+  <style>
+    /* ==========================================================================
+       COLOR PALETTE EXTRACTED FROM BUSINESS CARD (PHOTO-2026-10-28-19-49-32.jpg)
+       ========================================================================== */
+    :root {
+      --navy: #0A1A44;          /* Deep Navy from "Paris Team Hibiscus" lettering */
+      --navy-dark: #06102B;     /* Darker Navy for footer and hover states */
+      --hibiscus-red: #E31B23;  /* Vibrant Hibiscus Red from flower & swooshes */
+      --red-dark: #B81219;      /* Hover state red */
+      --sky-blue: #0082D6;      /* Royal Sky Blue from card borders & bottom waves */
+      --sky-light: #EBF6FD;     /* Soft tint of card border blue */
+      --leaf-green: #2E7D32;    /* Botanical green accent from hibiscus leaves */
+      --gold-accent: #F9A825;   /* Stamen gold accent */
+      --white: #FFFFFF;
+      --off-white: #F8FAFC;
+      --text-dark: #1E293B;
+      --text-muted: #475569;
+      --border-light: #E2E8F0;
+      --shadow-sm: 0 4px 12px rgba(10, 26, 68, 0.08);
+      --shadow-md: 0 10px 25px rgba(10, 26, 68, 0.12);
+      --shadow-lg: 0 20px 40px rgba(10, 26, 68, 0.16);
+      --radius: 12px;
+      --transition: all 0.3s ease;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Montserrat', sans-serif;
+      color: var(--text-dark);
+      background-color: var(--white);
+      line-height: 1.65;
+      overflow-x: hidden;
+    }
+
+    img {
+      max-width: 100%;
+      display: block;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    /* ==========================================================================
+       TOP BAR & NAVIGATION
+       ========================================================================== */
+    .top-bar {
+      background-color: var(--navy);
+      color: var(--white);
+      font-size: 0.85rem;
+      padding: 8px 5%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 10px;
+      border-bottom: 3px solid var(--hibiscus-red);
+    }
+
+    .top-bar-left span {
+      color: #93C5FD;
+      font-weight: 600;
+    }
+
+    .top-bar-right {
+      display: flex;
+      gap: 20px;
+      align-items: center;
+    }
+
+    .top-bar-right a:hover {
+      color: #93C5FD;
+    }
+
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      background-color: rgba(255, 255, 255, 0.97);
+      backdrop-filter: blur(8px);
+      box-shadow: var(--shadow-sm);
+      border-bottom: 2px solid var(--sky-blue);
+    }
+
+    .nav-container {
+      max-width: 1240px;
+      margin: 0 auto;
+      padding: 14px 5%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .brand-icon {
+      width: 42px;
+      height: 42px;
+      flex-shrink: 0;
+    }
+
+    .brand-text {
+      display: flex;
+      flex-direction: column;
+      line-height: 1.1;
+    }
+
+    .brand-name {
+      font-family: 'Playfair Display', serif;
+      font-weight: 700;
+      font-size: 1.35rem;
+      color: var(--navy);
+    }
+
+    .brand-name span.script {
+      font-family: 'Great Vibes', cursive;
+      font-size: 1.85rem;
+      color: var(--navy);
+      font-weight: 400;
+      margin-right: 4px;
+    }
+
+    .brand-tagline {
+      font-size: 0.7rem;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      color: var(--hibiscus-red);
+      font-weight: 700;
+    }
+
+    .nav-links {
+      display: flex;
+      list-style: none;
+      gap: 24px;
+      align-items: center;
+    }
+
+    .nav-links a {
+      font-weight: 600;
+      font-size: 0.9rem;
+      color: var(--navy);
+      transition: var(--transition);
+      position: relative;
+      padding: 4px 0;
+    }
+
+    .nav-links a::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 0;
+      height: 2px;
+      background-color: var(--hibiscus-red);
+      transition: var(--transition);
+    }
+
+    .nav-links a:hover {
+      color: var(--hibiscus-red);
+    }
+
+    .nav-links a:hover::after {
+      width: 100%;
+    }
+
+    .nav-cta {
+      background-color: var(--hibiscus-red);
+      color: var(--white) !important;
+      padding: 10px 18px !important;
+      border-radius: 50px;
+      font-weight: 700 !important;
+      box-shadow: 0 4px 10px rgba(227, 27, 35, 0.25);
+    }
+
+    .nav-cta::after {
+      display: none !important;
+    }
+
+    .nav-cta:hover {
+      background-color: var(--red-dark);
+      transform: translateY(-1px);
+    }
+
+    .mobile-toggle {
+      display: none;
+      background: none;
+      border: 2px solid var(--navy);
+      color: var(--navy);
+      font-size: 1.4rem;
+      padding: 4px 10px;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+
+    /* ==========================================================================
+       SHARED SECTION STYLES
+       ========================================================================== */
+    section {
+      padding: 80px 5%;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .section-header {
+      text-align: center;
+      max-width: 760px;
+      margin: 0 auto 50px;
+    }
+
+    .section-badge {
+      display: inline-block;
+      background-color: var(--sky-light);
+      color: var(--sky-blue);
+      border: 1px solid rgba(0, 130, 214, 0.3);
+      font-weight: 700;
+      font-size: 0.78rem;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      padding: 6px 16px;
+      border-radius: 50px;
+      margin-bottom: 12px;
+    }
+
+    .section-title {
+      font-family: 'Playfair Display', serif;
+      font-size: 2.35rem;
+      color: var(--navy);
+      margin-bottom: 14px;
+      line-height: 1.2;
+    }
+
+    .swoosh-divider {
+      width: 120px;
+      height: 6px;
+      margin: 0 auto 18px;
+      background: linear-gradient(90deg, var(--sky-blue) 0%, var(--hibiscus-red) 50%, var(--navy) 100%);
+      border-radius: 99px;
+    }
+
+    .section-subtitle {
+      color: var(--text-muted);
+      font-size: 1rem;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 14px 28px;
+      border-radius: 50px;
+      font-weight: 700;
+      font-size: 0.95rem;
+      transition: var(--transition);
+      cursor: pointer;
+      border: none;
+      text-align: center;
+    }
+
+    .btn-primary {
+      background-color: var(--hibiscus-red);
+      color: var(--white);
+      box-shadow: 0 6px 18px rgba(227, 27, 35, 0.3);
+    }
+
+    .btn-primary:hover {
+      background-color: var(--red-dark);
+      transform: translateY(-2px);
+    }
+
+    .btn-secondary {
+      background-color: var(--white);
+      color: var(--navy);
+      border: 2px solid var(--navy);
+    }
+
+    .btn-secondary:hover {
+      background-color: var(--navy);
+      color: var(--white);
+      transform: translateY(-2px);
+    }
+
+    /* ==========================================================================
+       1. HOME / HERO SECTION
+       ========================================================================== */
+    #home {
+      background: linear-gradient(135deg, var(--white) 0%, var(--sky-light) 100%);
+      border-bottom: 4px solid var(--sky-blue);
+      padding-top: 60px;
+      padding-bottom: 80px;
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.1fr 0.9fr;
+      gap: 48px;
+      align-items: center;
+    }
+
+    .hero-motto {
+      font-family: 'Great Vibes', cursive;
+      font-size: 2.3rem;
+      color: var(--hibiscus-red);
+      margin-bottom: 8px;
+    }
+
+    .hero-title {
+      font-family: 'Playfair Display', serif;
+      font-size: 2.9rem;
+      color: var(--navy);
+      line-height: 1.15;
+      margin-bottom: 20px;
+    }
+
+    .hero-title span {
+      color: var(--sky-blue);
+    }
+
+    .hero-description {
+      font-size: 1.05rem;
+      color: var(--text-dark);
+      margin-bottom: 28px;
+    }
+
+    .hero-pillars {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-bottom: 32px;
+    }
+
+    .pillar-chip {
+      background: var(--white);
+      border: 1.5px solid var(--sky-blue);
+      color: var(--navy);
+      padding: 8px 16px;
+      border-radius: 8px;
+      font-weight: 700;
+      font-size: 0.85rem;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      box-shadow: var(--shadow-sm);
+    }
+
+    .pillar-dot {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background-color: var(--hibiscus-red);
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px;
+    }
+
+    .hero-visuals {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+    }
+
+    .hero-img-main {
+      grid-column: 1 / -1;
+      border-radius: var(--radius);
+      overflow: hidden;
+      border: 4px solid var(--white);
+      box-shadow: var(--shadow-lg);
+      position: relative;
+    }
+
+    .hero-img-main img {
+      width: 100%;
+      height: 310px;
+      object-fit: cover;
+    }
+
+    .hero-img-sub {
+      border-radius: var(--radius);
+      overflow: hidden;
+      border: 3px solid var(--white);
+      box-shadow: var(--shadow-md);
+    }
+
+    .hero-img-sub img {
+      width: 100%;
+      height: 165px;
+      object-fit: cover;
+    }
+
+    /* ==========================================================================
+       2. ABOUT US SECTION
+       ========================================================================== */
+    #about {
+      background-color: var(--white);
+    }
+
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 48px;
+      align-items: center;
+    }
+
+    .about-card-showcase {
+      background: var(--sky-light);
+      padding: 20px;
+      border-radius: var(--radius);
+      border: 2px solid var(--sky-blue);
+      box-shadow: var(--shadow-md);
+    }
+
+    .about-card-showcase img {
+      border-radius: 8px;
+      width: 100%;
+      margin-bottom: 14px;
+    }
+
+    .about-card-caption {
+      text-align: center;
+      font-size: 0.88rem;
+      font-weight: 600;
+      color: var(--navy);
+    }
+
+    .about-content h3 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.85rem;
+      color: var(--navy);
+      margin-bottom: 16px;
+    }
+
+    .about-content p {
+      color: var(--text-muted);
+      margin-bottom: 18px;
+    }
+
+    .commitment-list {
+      list-style: none;
+      margin-top: 20px;
+      display: grid;
+      gap: 14px;
+    }
+
+    .commitment-list li {
+      background: var(--off-white);
+      padding: 14px 18px;
+      border-left: 4px solid var(--hibiscus-red);
+      border-radius: 0 8px 8px 0;
+      font-size: 0.95rem;
+    }
+
+    .commitment-list strong {
+      color: var(--navy);
+    }
+
+    /* ==========================================================================
+       3. MISSION & VISION SECTION
+       ========================================================================== */
+    #mission-vision {
+      background: linear-gradient(135deg, var(--navy) 0%, #102A6B 100%);
+      color: var(--white);
+      position: relative;
+    }
+
+    #mission-vision .section-title {
+      color: var(--white);
+    }
+
+    #mission-vision .section-badge {
+      background-color: rgba(255, 255, 255, 0.12);
+      color: #93C5FD;
+      border-color: rgba(147, 197, 253, 0.4);
+    }
+
+    #mission-vision .section-subtitle {
+      color: #CBD5E1;
+    }
+
+    .mv-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 32px;
+    }
+
+    .mv-card {
+      background-color: var(--white);
+      color: var(--text-dark);
+      border-radius: var(--radius);
+      padding: 36px 32px;
+      box-shadow: var(--shadow-lg);
+      border-top: 6px solid var(--hibiscus-red);
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .mv-card.vision-card {
+      border-top-color: var(--sky-blue);
+    }
+
+    .mv-label {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      font-family: 'Playfair Display', serif;
+      font-size: 1.65rem;
+      font-weight: 700;
+      color: var(--navy);
+      margin-bottom: 18px;
+    }
+
+    .mv-quote {
+      font-size: 1.05rem;
+      line-height: 1.75;
+      color: var(--text-dark);
+      font-style: italic;
+      background: var(--off-white);
+      padding: 20px;
+      border-radius: 8px;
+      border-left: 4px solid var(--navy);
+    }
+
+    .mv-card.vision-card .mv-quote {
+      border-left-color: var(--sky-blue);
+    }
+
+    .mv-card.mission-card .mv-quote {
+      border-left-color: var(--hibiscus-red);
+    }
+
+    /* ==========================================================================
+       4. OUR SERVICES SECTION
+       ========================================================================== */
+    #services {
+      background-color: var(--off-white);
+    }
+
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 30px;
+    }
+
+    .service-card {
+      background: var(--white);
+      border-radius: var(--radius);
+      overflow: hidden;
+      box-shadow: var(--shadow-md);
+      border: 1px solid var(--border-light);
+      transition: var(--transition);
+      display: flex;
+      flex-direction: column;
+    }
+
+    .service-card:hover {
+      transform: translateY(-6px);
+      box-shadow: var(--shadow-lg);
+      border-color: var(--sky-blue);
+    }
+
+    .service-img-wrap {
+      height: 230px;
+      overflow: hidden;
+      position: relative;
+      border-bottom: 4px solid var(--hibiscus-red);
+    }
+
+    .service-img-wrap img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.5s ease;
+    }
+
+    .service-card:hover .service-img-wrap img {
+      transform: scale(1.05);
+    }
+
+    .service-tag {
+      position: absolute;
+      top: 14px;
+      left: 14px;
+      background: var(--navy);
+      color: var(--white);
+      font-size: 0.75rem;
+      font-weight: 700;
+      padding: 5px 12px;
+      border-radius: 50px;
+      text-transform: uppercase;
+      letter-spacing: 0.8px;
+    }
+
+    .service-body {
+      padding: 28px 24px;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .service-body h3 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.45rem;
+      color: var(--navy);
+      margin-bottom: 12px;
+    }
+
+    .service-body p {
+      color: var(--text-muted);
+      font-size: 0.95rem;
+      margin-bottom: 18px;
+    }
+
+    .service-features {
+      list-style: none;
+      margin-top: auto;
+      border-top: 1px solid var(--border-light);
+      padding-top: 16px;
+      display: grid;
+      gap: 8px;
+    }
+
+    .service-features li {
+      font-size: 0.88rem;
+      color: var(--text-dark);
+      padding-left: 20px;
+      position: relative;
+    }
+
+    .service-features li::before {
+      content: '✦';
+      position: absolute;
+      left: 0;
+      color: var(--hibiscus-red);
+      font-weight: bold;
+    }
+
+    /* ==========================================================================
+       5. GALLERY SECTION
+       ========================================================================== */
+    #gallery {
+      background-color: var(--white);
+    }
+
+    .gallery-filters {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-bottom: 36px;
+    }
+
+    .filter-btn {
+      background: var(--sky-light);
+      color: var(--navy);
+      border: 1.5px solid var(--sky-blue);
+      padding: 9px 20px;
+      border-radius: 50px;
+      font-weight: 700;
+      font-size: 0.88rem;
+      cursor: pointer;
+      transition: var(--transition);
+    }
+
+    .filter-btn.active,
+    .filter-btn:hover {
+      background: var(--navy);
+      color: var(--white);
+      border-color: var(--navy);
+    }
+
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 22px;
+    }
+
+    .gallery-item {
+      border-radius: var(--radius);
+      overflow: hidden;
+      position: relative;
+      box-shadow: var(--shadow-sm);
+      border: 2px solid var(--border-light);
+      cursor: pointer;
+      background: var(--off-white);
+      transition: var(--transition);
+    }
+
+    .gallery-item:hover {
+      transform: translateY(-4px);
+      box-shadow: var(--shadow-md);
+      border-color: var(--hibiscus-red);
+    }
+
+    .gallery-item img {
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+      transition: transform 0.4s ease;
+    }
+
+    .gallery-item:hover img {
+      transform: scale(1.04);
+    }
+
+    .gallery-caption {
+      padding: 14px 16px;
+      background: var(--white);
+    }
+
+    .gallery-cat {
+      font-size: 0.72rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: var(--hibiscus-red);
+      display: block;
+      margin-bottom: 3px;
+    }
+
+    .gallery-title {
+      font-weight: 700;
+      font-size: 0.95rem;
+      color: var(--navy);
+    }
+
+    /* Lightbox Modal */
+    .lightbox {
+      display: none;
+      position: fixed;
+      inset: 0;
+      background: rgba(6, 16, 43, 0.92);
+      z-index: 2000;
+      justify-content: center;
+      align-items: center;
+      padding: 24px;
+    }
+
+    .lightbox.open {
+      display: flex;
+    }
+
+    .lightbox-content {
+      max-width: 900px;
+      width: 100%;
+      background: var(--white);
+      border-radius: var(--radius);
+      overflow: hidden;
+      position: relative;
+      border: 3px solid var(--sky-blue);
+    }
+
+    .lightbox-content img {
+      width: 100%;
+      max-height: 75vh;
+      object-fit: contain;
+      background: #0f172a;
+    }
+
+    .lightbox-info {
+      padding: 16px 24px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .lightbox-close {
+      background: var(--hibiscus-red);
+      color: var(--white);
+      border: none;
+      padding: 8px 16px;
+      border-radius: 50px;
+      font-weight: 700;
+      cursor: pointer;
+    }
+
+    /* ==========================================================================
+       6. CONTACT US & SERVICE AREA SECTION
+       ========================================================================== */
+    #contact {
+      background: linear-gradient(180deg, var(--sky-light) 0%, var(--white) 100%);
+      border-top: 3px solid var(--sky-blue);
+    }
+
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 0.95fr 1.05fr;
+      gap: 40px;
+      align-items: start;
+    }
+
+    .contact-info-card {
+      background: var(--navy);
+      color: var(--white);
+      border-radius: var(--radius);
+      padding: 36px 32px;
+      box-shadow: var(--shadow-lg);
+      border-bottom: 6px solid var(--hibiscus-red);
+    }
+
+    .contact-info-card h3 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.75rem;
+      margin-bottom: 12px;
+    }
+
+    .contact-info-card > p {
+      color: #CBD5E1;
+      font-size: 0.95rem;
+      margin-bottom: 26px;
+    }
+
+    .contact-methods {
+      display: grid;
+      gap: 18px;
+      margin-bottom: 30px;
+    }
+
+    .contact-method-box {
+      background: rgba(255, 255, 255, 0.08);
+      border: 1px solid rgba(255, 255, 255, 0.16);
+      padding: 16px 20px;
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      gap: 14px;
+    }
+
+    .method-icon {
+      width: 42px;
+      height: 42px;
+      border-radius: 50%;
+      background: var(--hibiscus-red);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.15rem;
+      flex-shrink: 0;
+    }
+
+    .method-label {
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: #93C5FD;
+      font-weight: 700;
+    }
+
+    .method-value {
+      font-size: 1.08rem;
+      font-weight: 700;
+      color: var(--white);
+    }
+
+    .service-area-box {
+      background: rgba(0, 130, 214, 0.18);
+      border: 1.5px solid var(--sky-blue);
+      border-radius: 10px;
+      padding: 20px;
+    }
+
+    .service-area-box h4 {
+      font-size: 1rem;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: #93C5FD;
+      margin-bottom: 14px;
+    }
+
+    .area-list {
+      list-style: none;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 10px;
+    }
+
+    .area-list li {
+      font-size: 0.93rem;
+      font-weight: 600;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .area-list li::before {
+      content: '•';
+      color: var(--hibiscus-red);
+      font-size: 1.4rem;
+      line-height: 1;
+    }
+
+    /* Inquiry Form */
+    .contact-form-card {
+      background: var(--white);
+      border-radius: var(--radius);
+      padding: 36px 32px;
+      box-shadow: var(--shadow-md);
+      border: 2px solid var(--sky-blue);
+    }
+
+    .contact-form-card h3 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.75rem;
+      color: var(--navy);
+      margin-bottom: 8px;
+    }
+
+    .contact-form-card > p {
+      color: var(--text-muted);
+      font-size: 0.92rem;
+      margin-bottom: 24px;
+    }
+
+    .form-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+    }
+
+    .form-group {
+      margin-bottom: 18px;
+    }
+
+    .form-group label {
+      display: block;
+      font-weight: 700;
+      font-size: 0.85rem;
+      color: var(--navy);
+      margin-bottom: 6px;
+    }
+
+    .form-control {
+      width: 100%;
+      padding: 12px 14px;
+      border: 1.5px solid #CBD5E1;
+      border-radius: 8px;
+      font-family: 'Montserrat', sans-serif;
+      font-size: 0.95rem;
+      color: var(--text-dark);
+      transition: var(--transition);
+    }
+
+    .form-control:focus {
+      outline: none;
+      border-color: var(--sky-blue);
+      box-shadow: 0 0 0 3px rgba(0, 130, 214, 0.15);
+    }
+
+    textarea.form-control {
+      min-height: 115px;
+      resize: vertical;
+    }
+
+    .form-status {
+      display: none;
+      margin-top: 16px;
+      padding: 14px 16px;
+      border-radius: 8px;
+      background-color: #DCFCE7;
+      border: 1px solid #22C55E;
+      color: #14532D;
+      font-size: 0.92rem;
+      font-weight: 600;
+    }
+
+    /* ==========================================================================
+       FOOTER
+       ========================================================================== */
+    footer {
+      background-color: var(--navy-dark);
+      color: var(--white);
+      padding: 44px 5% 24px;
+      border-top: 5px solid var(--hibiscus-red);
+    }
+
+    .footer-inner {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 20px;
+      padding-bottom: 24px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+    }
+
+    .footer-motto {
+      font-family: 'Great Vibes', cursive;
+      font-size: 2rem;
+      color: #93C5FD;
+    }
+
+    .footer-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      font-size: 0.9rem;
+    }
+
+    .footer-links a:hover {
+      color: #93C5FD;
+    }
+
+    .footer-bottom {
+      max-width: 1200px;
+      margin: 20px auto 0;
+      text-align: center;
+      font-size: 0.82rem;
+      color: #94A3B8;
+    }
+
+    /* ==========================================================================
+       RESPONSIVE BREAKPOINTS
+       ========================================================================== */
+    @media (max-width: 992px) {
+      .hero-grid,
+      .about-grid,
+      .mv-grid,
+      .contact-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .services-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .hero-title {
+        font-size: 2.3rem;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .mobile-toggle {
+        display: block;
+      }
+
+      .nav-links {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: var(--white);
+        flex-direction: column;
+        padding: 20px 5%;
+        gap: 16px;
+        border-bottom: 3px solid var(--sky-blue);
+        box-shadow: var(--shadow-md);
+      }
+
+      .nav-links.open {
+        display: flex;
+      }
+
+      .form-row {
+        grid-template-columns: 1fr;
+      }
+
+      .area-list {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Top Contact Bar -->
+  <div class="top-bar">
+    <div class="top-bar-left">
+      <span>Serving Greater Orlando &amp; Surrounding Communities</span>
+    </div>
+    <div class="top-bar-right">
+      <a href="tel:3213582026">📞 321-358-2026</a>
+      <a href="mailto:teamhibiscus7@gmail.com">✉️ teamhibiscus7@gmail.com</a>
+    </div>
+  </div>
+
+  <!-- Navigation Header -->
+  <header>
+    <div class="nav-container">
+      <a href="#home" class="brand">
+        <!-- Custom Hibiscus SVG Emblem matching the Business Card Red/Gold/Green -->
+        <svg class="brand-icon" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <circle cx="32" cy="32" r="30" fill="#EBF6FD" stroke="#0082D6" stroke-width="2.5"/>
+          <path d="M32 10C37 10 41 18 35 28C45 23 53 27 53 32C53 37 45 41 35 36C41 46 37 54 32 54C27 54 23 46 29 36C19 41 11 37 11 32C11 27 19 23 29 28C23 18 27 10 32 10Z" fill="#E31B23"/>
+          <circle cx="32" cy="32" r="5" fill="#0A1A44"/>
+          <path d="M32 32L43 19" stroke="#F9A825" stroke-width="2.5" stroke-linecap="round"/>
+          <circle cx="44" cy="18" r="2.5" fill="#F9A825"/>
+        </svg>
+        <div class="brand-text">
+          <span class="brand-name"><span class="script">Paris</span>Team Hibiscus</span>
+          <span class="brand-tagline">Cleaning • Decorating • Food Prep</span>
+        </div>
+      </a>
+
+      <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle Menu">☰</button>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#mission-vision">Mission &amp; Vision</a></li>
+        <li><a href="#services">Our Services</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#contact" class="nav-cta">Contact Us</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- 1. HOME SECTION -->
+  <section id="home">
+    <div class="container">
+      <div class="hero-grid">
+        <div>
+          <p class="hero-motto">Clean spaces, beautiful homes, Happier lives.</p>
+          <h1 class="hero-title">Welcome to <span>Paris Team Hibiscus</span></h1>
+          <p class="hero-description">
+            We bring warmth, care, and effortless elegance right to your doorstep. Paris Team Hibiscus provides dependable residential cleaning services, personalized interior decorating assistance, and attentive in-home meal preparation assistance—helping you enjoy a spotless, welcoming, and nourishing home every single day.
+          </p>
+
+          <div class="hero-pillars">
+            <div class="pillar-chip"><span class="pillar-dot"></span> Residential Cleaning</div>
+            <div class="pillar-chip"><span class="pillar-dot"></span> Interior Decorating</div>
+            <div class="pillar-chip"><span class="pillar-dot"></span> In-Home Food Prep</div>
+          </div>
+
+          <div class="hero-actions">
+            <a href="#contact" class="btn btn-primary">Request Service Inquiry</a>
+            <a href="#services" class="btn btn-secondary">Explore Our Services</a>
+          </div>
+        </div>
+
+        <div class="hero-visuals">
+          <div class="hero-img-main">
+            <img src="IMG_0125.png" alt="Paris Team Hibiscus decorated living room, spotless kitchen, and serene bedroom">
+          </div>
+          <div class="hero-img-sub">
+            <img src="IMG_4950.png" alt="Clean kitchen with Paris Team Hibiscus motto wall art">
+          </div>
+          <div class="hero-img-sub">
+            <img src="IMG_0519.png" alt="Team Hibiscus in-home fresh seafood and meal preparation">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 2. ABOUT US SECTION -->
+  <section id="about">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-badge">About Us</span>
+        <h2 class="section-title">Our Story &amp; Commitment to Your Home</h2>
+        <div class="swoosh-divider"></div>
+        <p class="section-subtitle">
+          Dedicated care that nurtures both your living environment and your daily well-being.
+        </p>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-card-showcase">
+          <img src="PHOTO-2026-10-28-19-49-32.jpg" alt="Paris Team Hibiscus Official Business Card">
+          <p class="about-card-caption">
+            Paris Team Hibiscus — Residential Cleaning, Interior Decorating &amp; In-Home Food Prep
+          </p>
+        </div>
+
+        <div class="about-content">
+          <h3>Thoughtful Care for Every Corner of Your Home</h3>
+          <p>
+            <strong>Paris Team Hibiscus</strong> was founded on a simple yet powerful belief: a clean, harmonious home and nourishing meals are the foundation of a joyful life. Inspired by timeless charm and vibrant hospitality, we combine meticulous attention to detail with genuine warmth.
+          </p>
+          <p>
+            Whether you need reliable upkeep for a busy household, a fresh decorative touch to revitalize your rooms, or a helping hand seasoning and preparing your own fresh groceries in your kitchen, our team treats your home with the utmost respect and pride.
+          </p>
+
+          <ul class="commitment-list">
+            <li>
+              <strong>Respect &amp; Trust:</strong> We treat your home, furnishings, and personal ingredients with care, discretion, and professionalism.
+            </li>
+            <li>
+              <strong>Tailored to Your Lifestyle:</strong> Every cleaning checklist, decor arrangement, and meal prep session is customized to your family's preferences.
+            </li>
+            <li>
+              <strong>Consistent Excellence:</strong> We live by our promise—<em>Clean spaces, beautiful homes, Happier lives.</em>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3. MISSION AND VISION SECTION -->
+  <section id="mission-vision">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-badge">Purpose &amp; Direction</span>
+        <h2 class="section-title">Mission and Vision — Paris Team Hibiscus</h2>
+        <div class="swoosh-divider"></div>
+        <p class="section-subtitle">
+          Guiding principles behind every home we clean, style, and nourish.
+        </p>
+      </div>
+
+      <div class="mv-grid">
+        <!-- Vision -->
+        <div class="mv-card vision-card">
+          <div>
+            <div class="mv-label">🌟 Our Vision</div>
+            <blockquote class="mv-quote">
+              "To enhance everyday living by helping “Residential cleaning services, interior decorating assistance, and in-home meal preparation assistance, including seasoning and preparation of client-provided food for vibrant health and lasting happiness."
+            </blockquote>
+          </div>
+        </div>
+
+        <!-- Mission -->
+        <div class="mv-card mission-card">
+          <div>
+            <div class="mv-label">🌺 Our Mission</div>
+            <blockquote class="mv-quote">
+              "To support customer well-being by providing cleaning services, interior decorating services and in-home meal preparation assistance, including seasoning and preparation of client-provided food.”promoting clean, attractive living spaces—fulfilling their physical and emotional needs for a healthier, happier life."
+            </blockquote>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4. OUR SERVICES SECTION -->
+  <section id="services">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-badge">What We Offer</span>
+        <h2 class="section-title">Our Three Core Service Categories</h2>
+        <div class="swoosh-divider"></div>
+        <p class="section-subtitle">
+          Comprehensive, personalized in-home support designed around your comfort and schedule.
+        </p>
+      </div>
+
+      <div class="services-grid">
+        <!-- Service 1: Residential Cleaning -->
+        <article class="service-card">
+          <div class="service-img-wrap">
+            <span class="service-tag">Category 01</span>
+            <img src="IMG_4950.png" alt="Sparkling clean kitchen countertops and appliances">
+          </div>
+          <div class="service-body">
+            <h3>Residential Cleaning Services</h3>
+            <p>
+              Enjoy peace of mind walking into a fresh, sanitized, and orderly home. We handle routine maintenance and thorough surface care so you can reclaim your free time.
+            </p>
+            <ul class="service-features">
+              <li>Kitchen countertops, sinks, stovetops &amp; appliance exteriors</li>
+              <li>Living room, bedroom &amp; hallway dusting and floor care</li>
+              <li>Bathroom sanitization, mirrors &amp; fixture polishing</li>
+              <li>Tidy resetting of cushions, throws &amp; high-touch areas</li>
+            </ul>
+          </div>
+        </article>
+
+        <!-- Service 2: Interior Decorating -->
+        <article class="service-card">
+          <div class="service-img-wrap">
+            <span class="service-tag">Category 02</span>
+            <img src="IMG_1946.png" alt="Warm, thoughtfully styled living room interior">
+          </div>
+          <div class="service-body">
+            <h3>Interior Decorating Assistance</h3>
+            <p>
+              Transform ordinary rooms into inviting sanctuaries. We assist with layout harmony, color coordination, accent styling, and refreshing your space using new or existing pieces.
+            </p>
+            <ul class="service-features">
+              <li>Furniture arrangement &amp; spatial flow optimization</li>
+              <li>Accent pillow, throw blanket, curtain &amp; rug styling</li>
+              <li>Wall art placement, floral arrangements &amp; tabletop vignettes</li>
+              <li>Cohesive color palette &amp; seasonal room refreshes</li>
+            </ul>
+          </div>
+        </article>
+
+        <!-- Service 3: In-Home Meal Prep -->
+        <article class="service-card">
+          <div class="service-img-wrap">
+            <span class="service-tag">Category 03</span>
+            <img src="IMG_0519.png" alt="Fresh seafood and produce prepared in client's kitchen">
+          </div>
+          <div class="service-body">
+            <h3>In-Home Meal Preparation Assistance</h3>
+            <p>
+              Save hours in the kitchen while enjoying flavorful, home-cooked meals. Working directly in your kitchen, we wash, season, and prepare your client-provided groceries with care.
+            </p>
+            <ul class="service-features">
+              <li>Cleaning, trimming &amp; prepping client-provided meats, seafood &amp; produce</li>
+              <li>Custom seasoning, marinating &amp; portioning for daily meals</li>
+              <li>Organized storage labeling for effortless weeknight cooking</li>
+              <li>Full kitchen cleanup and sanitization upon completion</li>
+            </ul>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5. GALLERY SECTION -->
+  <section id="gallery">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-badge">Our Work</span>
+        <h2 class="section-title">Home &amp; Service Gallery</h2>
+        <div class="swoosh-divider"></div>
+        <p class="section-subtitle">
+          Browse examples of our spotless spaces, interior styling, and in-home meal preparation. Click any photo to enlarge.
+        </p>
+      </div>
+
+      <div class="gallery-filters">
+        <button class="filter-btn active" data-filter="all">All Photos</button>
+        <button class="filter-btn" data-filter="cleaning">Cleaning</button>
+        <button class="filter-btn" data-filter="decorating">Home Decoration</button>
+        <button class="filter-btn" data-filter="food">Food Preparation</button>
+      </div>
+
+      <div class="gallery-grid" id="galleryGrid">
+        <!-- Item 1 -->
+        <div class="gallery-item" data-category="cleaning" data-title="Spotless Kitchen &amp; Polished Marble Island">
+          <img src="IMG_4950.png" alt="Spotless kitchen with granite countertops and floral centerpiece">
+          <div class="gallery-caption">
+            <span class="gallery-cat">Cleaning</span>
+            <div class="gallery-title">Spotless Kitchen &amp; Polished Island</div>
+          </div>
+        </div>
+
+        <!-- Item 2 -->
+        <div class="gallery-item" data-category="decorating" data-title="Signature Hibiscus Living, Kitchen &amp; Bedroom Styling">
+          <img src="IMG_0125.png" alt="Three-panel showcase of red, white, and royal blue hibiscus home decor">
+          <div class="gallery-caption">
+            <span class="gallery-cat">Home Decoration</span>
+            <div class="gallery-title">Signature Hibiscus Room Styling</div>
+          </div>
+        </div>
+
+        <!-- Item 3 -->
+        <div class="gallery-item" data-category="food" data-title="In-Home Fresh Seafood Cleaning &amp; Seasoning Prep">
+          <img src="IMG_0519.png" alt="Gloved hands cleaning and prepping fresh shrimp and red snapper">
+          <div class="gallery-caption">
+            <span class="gallery-cat">Food Preparation</span>
+            <div class="gallery-title">Fresh Seafood Cleaning &amp; Prep</div>
+          </div>
+        </div>
+
+        <!-- Item 4 -->
+        <div class="gallery-item" data-category="decorating" data-title="Serene Neutral &amp; Botanical Living Space">
+          <img src="IMG_1946.png" alt="Bright living room with sectional sofa, natural wood coffee table, and greenery">
+          <div class="gallery-caption">
+            <span class="gallery-cat">Home Decoration</span>
+            <div class="gallery-title">Serene Botanical Living Space</div>
+          </div>
+        </div>
+
+        <!-- Item 5 -->
+        <div class="gallery-item" data-category="decorating" data-title="Modern Accent Chair &amp; Warm Lighting Arrangement">
+          <img src="IMG_9541.png" alt="Contemporary living room with golden yellow accent chairs and wall sconces">
+          <div class="gallery-caption">
+            <span class="gallery-cat">Home Decoration</span>
+            <div class="gallery-title">Modern Accent &amp; Lighting Arrangement</div>
+          </div>
+        </div>
+
+        <!-- Item 6 -->
+        <div class="gallery-item" data-category="cleaning" data-title="Freshly Cleaned &amp; Organized Family Living Room">
+          <img src="IMG_1649.png" alt="Clean living room with swept hardwood floors and neat seating">
+          <div class="gallery-caption">
+            <span class="gallery-cat">Cleaning</span>
+            <div class="gallery-title">Freshly Cleaned Family Living Room</div>
+          </div>
+        </div>
+
+        <!-- Item 7 -->
+        <div class="gallery-item" data-category="cleaning" data-title="Inviting &amp; Tidy Entryway View">
+          <img src="IMG_5887.png" alt="Doorway view into a clean, well-kept living area">
+          <div class="gallery-caption">
+            <span class="gallery-cat">Cleaning</span>
+            <div class="gallery-title">Inviting &amp; Tidy Living Area</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Lightbox Modal -->
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true">
+    <div class="lightbox-content">
+      <img id="lightboxImg" src="" alt="">
+      <div class="lightbox-info">
+        <strong id="lightboxCaption" style="color: var(--navy);"></strong>
+        <button class="lightbox-close" id="lightboxClose">Close ✕</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- 6. CONTACT US & SERVICE AREA SECTION -->
+  <section id="contact">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-badge">Get In Touch</span>
+        <h2 class="section-title">Contact Us &amp; Service Areas</h2>
+        <div class="swoosh-divider"></div>
+        <p class="section-subtitle">
+          Ready for a cleaner home, fresh decor, or in-home meal prep? Reach out today!
+        </p>
+      </div>
+
+      <div class="contact-grid">
+        <!-- Left Column: Direct Contact & Service Area -->
+        <div class="contact-info-card">
+          <h3>Paris Team Hibiscus</h3>
+          <p>
+            Call, email, or submit our service inquiry form to schedule your consultation or appointment.
+          </p>
+
+          <div class="contact-methods">
+            <div class="contact-method-box">
+              <div class="method-icon">📞</div>
+              <div>
+                <div class="method-label">Phone Number</div>
+                <a href="tel:3213582026" class="method-value">321-358-2026</a>
+              </div>
+            </div>
+
+            <div class="contact-method-box">
+              <div class="method-icon">✉️</div>
+              <div>
+                <div class="method-label">Email Address</div>
+                <a href="mailto:teamhibiscus7@gmail.com" class="method-value">teamhibiscus7@gmail.com</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="service-area-box">
+            <h4>📍 Our Service Area</h4>
+            <ul class="area-list">
+              <li>Orlando</li>
+              <li>Winter Park</li>
+              <li>Apopka</li>
+              <li>Ocoee</li>
+              <li>Maitland</li>
+              <li>Eatonville</li>
+              <li>Winter Garden</li>
+              <li>Oakland</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Right Column: Service Inquiry Form -->
+        <div class="contact-form-card">
+          <h3>Service Inquiry Form</h3>
+          <p>Tell us which service you need and your city, and we will get back to you promptly.</p>
+
+          <form id="inquiryForm">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="fullName">Full Name *</label>
+                <input type="text" id="fullName" name="fullName" class="form-control" placeholder="Your Name" required>
+              </div>
+              <div class="form-group">
+                <label for="phone">Phone Number *</label>
+                <input type="tel" id="phone" name="phone" class="form-control" placeholder="(321) 000-0000" required>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="email">Email Address *</label>
+                <input type="email" id="email" name="email" class="form-control" placeholder="you@example.com" required>
+              </div>
+              <div class="form-group">
+                <label for="city">Service City *</label>
+                <select id="city" name="city" class="form-control" required>
+                  <option value="">Select your city...</option>
+                  <option value="Orlando">Orlando</option>
+                  <option value="Winter Park">Winter Park</option>
+                  <option value="Apopka">Apopka</option>
+                  <option value="Ocoee">Ocoee</option>
+                  <option value="Maitland">Maitland</option>
+                  <option value="Eatonville">Eatonville</option>
+                  <option value="Winter Garden">Winter Garden</option>
+                  <option value="Oakland">Oakland</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="serviceType">Service Interested In *</label>
+              <select id="serviceType" name="serviceType" class="form-control" required>
+                <option value="">Choose a service...</option>
+                <option value="Residential Cleaning Services">Residential Cleaning Services</option>
+                <option value="Interior Decorating Assistance">Interior Decorating Assistance</option>
+                <option value="In-Home Meal Preparation Assistance">In-Home Meal Preparation Assistance</option>
+                <option value="Multiple Services Bundle">Multiple Services Bundle</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="message">Project Details / Preferred Schedule *</label>
+              <textarea id="message" name="message" class="form-control" placeholder="Let us know about your home size, decorating goals, or meal prep preferences..." required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary" style="width: 100%;">Send Service Inquiry</button>
+
+            <div class="form-status" id="formStatus"></div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-inner">
+      <div>
+        <div class="footer-motto">Clean spaces, beautiful homes, Happier lives.</div>
+        <p style="font-size: 0.9rem; color: #CBD5E1; margin-top: 4px;">
+          Paris Team Hibiscus • 321-358-2026 • teamhibiscus7@gmail.com
+        </p>
+      </div>
+      <div class="footer-links">
+        <a href="#home">Home</a>
+        <a href="#about">About Us</a>
+        <a href="#mission-vision">Mission &amp; Vision</a>
+        <a href="#services">Our Services</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#contact">Contact Us</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      &copy; <span id="year"></span> Paris Team Hibiscus. All Rights Reserved.
+    </div>
+  </footer>
+
+  <!-- JAVASCRIPT -->
+  <script>
+    // Set current year in footer
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Mobile Navigation Toggle
+    const mobileToggle = document.getElementById('mobileToggle');
+    const navLinks = document.getElementById('navLinks');
+
+    mobileToggle.addEventListener('click', () => {
+      navLinks.classList.toggle('open');
+    });
+
+    navLinks.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        navLinks.classList.remove('open');
+      });
+    });
+
+    // Gallery Category Filter
+    const filterButtons = document.querySelectorAll('.filter-btn');
+    const galleryItems = document.querySelectorAll('.gallery-item');
+
+    filterButtons.forEach(btn => {
+      btn.addEventListener('click', () => {
+        filterButtons.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+
+        const filter = btn.getAttribute('data-filter');
+
+        galleryItems.forEach(item => {
+          const category = item.getAttribute('data-category');
+          if (filter === 'all' || category === filter) {
+            item.style.display = 'block';
+          } else {
+            item.style.display = 'none';
+          }
+        });
+      });
+    });
+
+    // Gallery Lightbox Preview
+    const lightbox = document.getElementById('lightbox');
+    const lightboxImg = document.getElementById('lightboxImg');
+    const lightboxCaption = document.getElementById('lightboxCaption');
+    const lightboxClose = document.getElementById('lightboxClose');
+
+    galleryItems.forEach(item => {
+      item.addEventListener('click', () => {
+        const img = item.querySelector('img');
+        const title = item.getAttribute('data-title');
+        lightboxImg.src = img.src;
+        lightboxImg.alt = img.alt;
+        lightboxCaption.textContent = title;
+        lightbox.classList.add('open');
+      });
+    });
+
+    lightboxClose.addEventListener('click', () => {
+      lightbox.classList.remove('open');
+    });
+
+    lightbox.addEventListener('click', (e) => {
+      if (e.target === lightbox) {
+        lightbox.classList.remove('open');
+      }
+    });
+
+    // Service Inquiry Form Handler (Opens pre-filled email to teamhibiscus7@gmail.com + displays confirmation)
+    const inquiryForm = document.getElementById('inquiryForm');
+    const formStatus = document.getElementById('formStatus');
+
+    inquiryForm.addEventListener('submit', function (e) {
+      e.preventDefault();
+
+      const fullName = document.getElementById('fullName').value.trim();
+      const phone = document.getElementById('phone').value.trim();
+      const email = document.getElementById('email').value.trim();
+      const city = document.getElementById('city').value;
+      const serviceType = document.getElementById('serviceType').value;
+      const message = document.getElementById('message').value.trim();
+
+      const subject = encodeURIComponent(`Service Inquiry: ${serviceType} (${city}) - ${fullName}`);
+      const body = encodeURIComponent(
+        `Hello Paris Team Hibiscus,\n\n` +
+        `I would like to request information about your services:\n\n` +
+        `Name: ${fullName}\n` +
+        `Phone: ${phone}\n` +
+        `Email: ${email}\n` +
+        `City: ${city}\n` +
+        `Service Requested: ${serviceType}\n\n` +
+        `Details:\n${message}\n\n` +
+        `Thank you!`
+      );
+
+      formStatus.style.display = 'block';
+      formStatus.innerHTML = `Thank you, <strong>${fullName}</strong>! Your inquiry for <strong>${serviceType}</strong> in <strong>${city}</strong> is ready. Opening your email client to send to <strong>teamhibiscus7@gmail.com</strong>, or call us directly at <strong>321-358-2026</strong>.`;
+
+      window.location.href = `mailto:teamhibiscus7@gmail.com?subject=${subject}&body=${body}`;
+    });
+  </script>
+</body>
+</html>
